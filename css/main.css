@@ -93,6 +93,15 @@ header {
       padding: 0 0.8vw;
       color: #B3ABA8;
       font-size: 18px; }
+    header #header-icons #notification-count {
+      position: absolute;
+      top: 0;
+      right: 35%;
+      padding: 1px 5px;
+      background: red;
+      border-radius: 15px;
+      font-size: 9px;
+      color: white; }
   header .container {
     width: 40%;
     margin: 0 auto; }

@@ -38,6 +38,17 @@ input{
     		color : $primary-color;
     		font-size: 18px;
     	}
+
+        #notification-count{
+            position: absolute;
+            top: 0;
+            right: 35%;
+            padding: 1px 5px;
+            background: red;
+            border-radius: 15px;
+            font-size: 9px;
+            color: white;
+        }
     }
 
     .container{
