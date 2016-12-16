@@ -1,0 +1,13 @@
+@import 'general/variables';
+@import 'components/sidebar';
+@import 'components/header';
+@import 'components/mainbody';
+@import 'components/post';
+
+
+body{
+	height:100%;
+	width:100%;
+	font-family : $primary-font;
+	overflow-x : hidden;
+}

@@ -1,0 +1,127 @@
+header{
+	height:70px;
+    width: 100%;
+    box-shadow : 0 4px 3px -3px rgba(0,0,0,0.2);
+    position:relative;
+    transition: margin-left 0.5s;
+    @media only screen and (min-width: 992px){
+        width:calc(100% - 250px);
+        margin-left:250px;
+    } 
+
+input{
+	width: 100%;
+	margin-top: 20px;
+	padding: 7.5px 0px;
+	background: #F3F3F3;
+	color: $primary-color;
+	border: none;
+    font-size: 12px;
+    }
+
+    #search-placeholder{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #F3F3F3;
+    color: $primary-color;
+    }
+    
+    #header-icons{
+    	position: absolute;
+    	right: 0;
+    	top: 25px;
+        padding-right: 5px;
+    	i{
+    		padding : 0 0.8vw;
+    		color : $primary-color;
+    		font-size: 18px;
+    	}
+    }
+
+    .container{
+    width: 40%;
+    margin : 0 auto;
+     @media only screen and (min-width: 480px){
+        width: 50%;
+    }
+    @media only screen and (min-width: 768px){
+        width: 70%;
+    }
+    @media only screen and (min-width: 992px){
+        width: 71%;
+    }
+    }
+
+
+}
+
+
+
+
+
+$bar-width: 22px;
+$bar-height: 4px;
+$bar-spacing: 8px;
+
+.hamburger-menu {
+  position: absolute;
+  top: 25px;
+  left:25px;
+  margin: auto;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing*2;
+  cursor: pointer;
+  @media only screen and (min-width: 992px){
+        display: none;
+    } 
+ }
+
+.bar,
+.bar:after,
+.bar:before {
+    width: $bar-width;
+    height: $bar-height;
+}
+
+.bar {
+    position: relative;
+    transform: translateY($bar-spacing);
+    background:  #29A3FF;
+    transition: all 0ms 300ms;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: $bar-spacing;
+    background: #29A3FF;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: $bar-spacing;
+    background: #29A3FF;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}

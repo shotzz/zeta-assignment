@@ -1,0 +1,84 @@
+
+aside{
+	height: 100%;
+	width: 0px;
+	float:left;
+    border-right: 1px inset lightgrey;
+    visibility: collapse;
+    transition: width 0.5s; 
+    @media only screen and (min-width: 992px){
+        visibility: visible;
+        width: 250px;
+    }
+
+    }
+
+#sidebar-fb{
+	position: relative;
+	padding : 25px;
+    
+	.fa-facebook-square{
+		display: inline;
+		color: #3B5A96;
+		font-size: 35px;
+	}
+
+	p{
+		display: inline;
+		padding: 0px 20px;
+		vertical-align: super;
+		font-weight: bolder;
+		color: $primary-color;
+		font-size: 15px;
+		}
+
+    .fa-sort-desc{
+    	position: absolute;
+    	right: 25px;;
+    	top: 32px;
+       	vertical-align: super;
+    }
+}
+
+.sidebar-block{
+	padding: 10px 25px;
+	h2{
+		font-size: 18px;
+	}
+}
+
+.sidebar-block-tile{
+	img{
+		height: 20px;
+		width: 20px;
+	    display: inline-block;
+	}
+
+	p{
+		padding : 0px 10px; 
+	    color: $primary-color;
+	    font-size: 15px;
+	    display: inline-block;
+	    margin: 5px 0px;
+	    }
+	i{
+		font-size: 20px;
+		color: $primary-color;
+		font-weight: bold;
+	}    
+
+}
+
+#sidebar-block-birthdays
+{
+	.sidebar-block-tile{
+		padding-left:10px;
+		img{
+			height: 40px;
+			width: 40px;
+			border-radius:50%;
+			border: 5px solid white;
+			margin-left: -15px;
+		}
+	}
+}
