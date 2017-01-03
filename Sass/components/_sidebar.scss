@@ -1,14 +1,13 @@
 
 aside{
 	height: 100%;
-	width: 0px;
+	width: 250px;
 	float:left;
     border-right: 1px inset lightgrey;
-    visibility: collapse;
-    transition: width 0.5s; 
+    display: none;
     @media only screen and (min-width: 992px){
-        visibility: visible;
-        width: 250px;
+        display: block;
+
     }
 
     }

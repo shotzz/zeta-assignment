@@ -1,14 +1,12 @@
 aside {
   height: 100%;
-  width: 0px;
+  width: 250px;
   float: left;
   border-right: 1px inset lightgrey;
-  visibility: collapse;
-  transition: width 0.5s; }
+  display: none; }
   @media only screen and (min-width: 992px) {
     aside {
-      visibility: visible;
-      width: 250px; } }
+      display: block; } }
 
 #sidebar-fb {
   position: relative;
@@ -335,5 +333,34 @@ body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden; }
+
+.sidebar-active {
+  margin-left: 250px; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
 
 /*# sourceMappingURL=main.css.map */

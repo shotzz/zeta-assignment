@@ -10,28 +10,22 @@ $( document ).ready(function() {
 function checkSize(){
 	if($('.hamburger-menu').css('display')=='none')
 	{
-		$('aside').css('visibility','visible');
-		$('aside').css('width','250px');
-		$('header').css('margin-left','250px');
-		$('main').css('margin-left','250px');
+		$('aside').css('display','block');
+	    
 	}
+	else
+	{
+		$('aside').css('display','none');
+	}	
 }
 
 (function () {
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
-		if($('aside').css('visibility')=='collapse')
-		{
-		$('aside').css('visibility','visible');
-		$('aside').css('width','250px');
-		$('header').css('margin-left','250px');
-		$('main').css('margin-left','250px');	
-		}
-		else{
-		$('aside').css('visibility','collapse');
-		$('aside').css('width','0px');
-		$('header').css('margin-left','0px');
-		$('main').css('margin-left','0px');	
-		}
+		$('aside').toggle();
+		$('main').toggleClass('sidebar-active'); 
+ 	    $('header').toggleClass('sidebar-active');
+ 	    $('aside').toggleClass('animated slideInLeft');
+        
 	})
 })();
