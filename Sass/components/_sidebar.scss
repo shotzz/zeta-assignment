@@ -7,21 +7,17 @@ aside{
     display: none;
     @media only screen and (min-width: 992px){
         display: block;
-
     }
-
-    }
+}
 
 #sidebar-fb{
 	position: relative;
 	padding : 25px;
-    
-	.fa-facebook-square{
+   	.fa-facebook-square{
 		display: inline;
 		color: #3B5A96;
 		font-size: 35px;
 	}
-
 	p{
 		display: inline;
 		padding: 0px 20px;
@@ -29,8 +25,7 @@ aside{
 		font-weight: bolder;
 		color: $primary-color;
 		font-size: 15px;
-		}
-
+	}
     .fa-sort-desc{
     	position: absolute;
     	right: 25px;;
@@ -52,7 +47,6 @@ aside{
 		width: 20px;
 	    display: inline-block;
 	}
-
 	p{
 		padding : 0px 10px; 
 	    color: $primary-color;

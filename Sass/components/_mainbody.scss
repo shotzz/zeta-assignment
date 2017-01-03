@@ -5,14 +5,7 @@ main{
     @media only screen and (min-width: 992px){
         width:calc(100% - 250px);
         margin-left:250px;
-    }
-    
-    
-
-
-
-
-
+    }  
     .container {
         width: 90%;
         margin : 0 auto;
@@ -23,9 +16,6 @@ main{
         width: 71%;
         }
     }
-    
-   
-
 }
 
  textarea{
@@ -51,19 +41,17 @@ main{
  		position: absolute;
  		left: -10px;
  		top: -10px;
-
  	}
-
- button{
- 		padding:7px 10px;
- 		border-radius: 50%;
- 		box-shadow: $shadow2;
- 	    border:none;
- 	    i{
- 	    	font-size: 15px;
- 	    }
- 	    }
- }
+     button{
+     		padding:7px 10px;
+     		border-radius: 50%;
+     		box-shadow: $shadow2;
+     	    border:none;
+     	    i{
+     	    	font-size: 15px;
+     	    }
+     	    }
+     }
 
  #input-camera{
  	position:absolute;
@@ -89,9 +77,6 @@ main{
     	i{
  		color: white;
  	}
-
-    
-
- }
+}
 
  
